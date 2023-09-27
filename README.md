@@ -4,10 +4,6 @@ A customizable GitHub Actions to free disk space on Linux GitHub Actions runners
 
 On a typical Ubuntu runner, with all options turned on (or not turned off rather), this can clear up to 31 GB of disk space in about 3 minutes (the longest period is calling `apt` to uninstall packages). This is useful when you need a lot of disk space to run computations.
 
-Please don't hesitate to [submit issues](https://github.com/jlumbroso/free-disk-space/issues) to report problems or suggest new features (or sets of files to help remove).
-
-Also, please ⭐️ the repo if you like this GitHub Actions! Thanks! 😊
-
 ## Example
 
 ```yaml
@@ -20,7 +16,7 @@ jobs:
     steps:
 
     - name: Free Disk Space (Ubuntu)
-      uses: jlumbroso/free-disk-space@main
+      uses: descriptinc/free-disk-space@main
       with:
         # this might remove tools that are actually needed,
         # if set to "true" but frees about 6 GB
