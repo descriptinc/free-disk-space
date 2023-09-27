@@ -14,7 +14,7 @@ jobs:
     steps:
       # If there is a problem with this GitHub Actions, this step will fail
       - name: Free Disk Space
-        uses: hirnidrin/free-disk-space@main
+        uses: descriptinc/free-disk-space@main
         with:
           tool-cache: true
 
